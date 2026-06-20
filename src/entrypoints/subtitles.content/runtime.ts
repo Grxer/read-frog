@@ -1,3 +1,4 @@
+import { initIhavenotvSubtitles } from "./init-ihavenotv-subtitles"
 import { initYoutubeSubtitles } from "./init-youtube-subtitles"
 
 let hasBootstrappedSubtitlesRuntime = false
@@ -9,4 +10,5 @@ export function bootstrapSubtitlesRuntime() {
 
   hasBootstrappedSubtitlesRuntime = true
   initYoutubeSubtitles()
+  initIhavenotvSubtitles()
 }
